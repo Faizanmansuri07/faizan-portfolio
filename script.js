@@ -5,7 +5,8 @@ const body = document.querySelector("body");
 const visibility = document.querySelector(".visibility");
 const resume = document.querySelector(".resume")
 const about = document.querySelector(".csg");
-const portfolio = document.querySelector(".portfolio")
+const portfolio = document.querySelector(".portfolio");
+const contact = document.querySelector(".contacts");
 let show = true;
 
 btn.addEventListener('click' , ()=>{
@@ -56,9 +57,7 @@ function showPopup() {
     setTimeout(()=>{
         container.style.display ="none";
     },2000);
-    fullname.value = " ";
-    textarea.value =" ";
-    email.value =" ";
+    
 }
 }
 
@@ -67,16 +66,28 @@ function showdet(op) {
         about.classList.remove("visibility");
         resume.classList.add("visibility");
         portfolio.classList.add("visibility");
-
+        contact.classList.add("visibility");
     }
-   else if(op ==="resume") {
+    if(op ==="resume") {
             resume.classList.remove("visibility");
             about.classList.add("visibility");
             portfolio.classList.add("visibility");
+            contact.classList.add("visibility");
+            
    }
-   else if(op ==="portfolio") {
+   if(op ==="portfolio") {
     portfolio.classList.remove("visibility");
     about.classList.add("visibility");
     resume.classList.add("visibility");
+    contact.classList.add("visibility")
+    
    }
+ 
+}
+function showcont() {
+    about.classList.add("visibility");
+    resume.classList.add("visibility");
+    portfolio.classList.add("visibility");
+    contact.classList.remove("visibility");
+
 }
