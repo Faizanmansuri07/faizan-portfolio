@@ -13,7 +13,7 @@
 }
 body{
     background-color: #121212;
-  
+   scroll-behavior: smooth;
     padding: 60px 100px ;
     overflow-x: hidden;
 }
@@ -495,6 +495,7 @@ portfolio
 #disc{
     color:#d6d6d6b2 ;
 }
+
 .image{
     overflow: hidden;
     border-radius: 20px;
@@ -508,6 +509,7 @@ portfolio
 }
 .mapbox iframe{
     border-radius: 20px;
+    margin-top: 40px;
     width: 800px;
 }
 .form{
@@ -609,16 +611,16 @@ pop-up
 /* --------------
 .navbar
 ------------- */
+
 .nav{
    background-color: #1e1e1f;
    border: 1px solid hsl(0, 0%, 22%);
    box-shadow: -4px 8px 24px hsla(0, 0%, 0%, 0.25);
    width: 100px;  
-   height: 450px;
+   height: 350px;
    padding: 20px;
    display: flex;
    flex-direction: column;
-  
    gap: 20px;
    border-radius: 20px;
    position: sticky;
@@ -666,14 +668,26 @@ ul li{
   align-items: center;
   justify-content: center;
   flex-direction: row;
-  gap: 20px;
-  
+  gap: 10px;
+  background: hsla(240, 1%, 17%, 0.75);
+  backdrop-filter: blur(10px);
+  border: 1px solid hsl(0, 0%, 22%);
+  border-radius: 12px 12px 0 0;
+  box-shadow: 0 16px 30px hsla(0, 0%, 0%, 0.25);
+  color: white;
+}
+.navbar .box li:hover{
+    color: red;
 }
 .navbar{
     display: none;
+    
 }
 .hide{
     display: block;
+}
+.navbar .box a{
+    color: white;
 }
 @keyframes fadeIn {
     from {
@@ -692,8 +706,6 @@ ul li{
         transform: translateY(0);
     }
 }
-
-
 @media(max-width : 555px) {
     .portfolio-box{
         display: flex;
@@ -875,7 +887,7 @@ ul li{
             width: 300px;
         }
         .image img{
-            width: 250px;
+            width: 200px;
         }
 }
 @media (max-width:426px) {
