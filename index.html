@@ -14,7 +14,7 @@
 </head>
 <body>
     <main>
-        <div class="me">
+        <div class="me" id="top">
          
     <aside class="sidebar" data-sidebar>
 
@@ -554,7 +554,8 @@ portfolio
 
 </article>
 
-<article class="contact hide">
+<article class="contact">
+  <div class="contacts visibility">
         <header>
                   <h2 class="h2 artical-title">
                         contact
@@ -584,6 +585,7 @@ portfolio
                     </div>
                   </div>
         </section>
+      </div>
 </article>
    </article>     
 
@@ -606,7 +608,7 @@ portfolio
    navbar
    ----------------------- -->
    <div class="nav">
-    <div class="box">
+    <div class="box navbg" onclick="showdet('about');">
             <div class="box-img">
               <i class="fa-regular fa-user"></i>
             </div>
@@ -615,7 +617,7 @@ portfolio
             </div>
     </div>
 
-    <div class="box">
+    <div class="box" onclick="showdet('resume');">
       <div class="box-img">
         <i class="fa-regular fa-address-card"></i> 
       </div>
@@ -624,7 +626,7 @@ portfolio
       </div>
 </div>
 
-<div class="box">
+<div class="box" onclick="showdet('portfolio');">
 <div class="box-img">
   <i class="fa-regular fa-address-book"></i>
 </div>
@@ -632,16 +634,9 @@ portfolio
       <p>portfolio</p>
 </div>
 </div>
-<div class="box">
-<div class="box-img">
-<i class="fa-solid fa-blog"></i>
-</div>
-<div class="box-name">
-<p>Blog</p>
-</div>
-</div>
 
-<div class="box">
+
+<div class="box" onclick="showcont();">
 <div class="box-img">
 <i class="fa-solid fa-list-check"></i>
 </div>
@@ -654,11 +649,11 @@ portfolio
 
 <div class="navbar">
      <ul class="box">
-            <li onclick="showdet('about');">about</li>
-            <li onclick="showdet('resume');">Resume</li>
-            <li onclick="showdet('portfolio');">portfolio</li>
+          <a href="#top"> <li onclick="showdet('about');">about</li></a>
+            <a href="#top"><li onclick="showdet('resume');">Resume</li></a>
+            <a href="#top"><li onclick="showdet('portfolio');">portfolio</li></a>
             <!-- <li onclick="showdet('blog')">Blog</li> -->
-            <li onclick="showdet('contact')">Contact</li>
+          <a href="#top"><li onclick="showcont();">Contact</li></a>
      </ul>
 </div>
     
