@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,6 +15,7 @@
 <body>
     <main>
         <div class="me">
+         
     <aside class="sidebar" data-sidebar>
 
         <div class="sidebar-info">
@@ -28,16 +30,17 @@
             <p class="title">Web Developer</p>
           </div>
   
-          <button class="info_more-btn" data-sidebar-btn>
+          <button class="info_more-btn" id="btn" data-sidebar-btn>
             <span>Show Contacts</span>
   
-            <ion-icon name="chevron-down"></ion-icon>
+            <ion-icon name="chevron-down" class="icons"></ion-icon>
           </button>
-
+          <div class="more">
           <div class="horizontal-bar"></div>
-
+      
           <!-- links  -->
           <div class="contact">
+          
                     <div class="contact-main">
                                 <div class="icon">
                                         <!-- icon -->
@@ -100,20 +103,20 @@
                     </a>
             </div>
           </div>
+        </div>
         </aside>
         
-       <article class="div-2" data-page="about">
-                <div class="navbar">
-                        <ul class="items">
-                                <li><a href="#">About</a></li>
-                                <li><a href="#">Reseme</a></li>
-                                <li><a href="#">Portfolio</a></li>
-                                <li><a href="#">Blog</a></li>
-                                <li><a href="#">Contact</a></li>
-                        </ul>
-                </div>
+       
 
+        <!-- -------------------------
+        navbar
+        ------------------------- -->
+       <article class="div-2" data-page="about">
+            
+               
+                <div class="csg">
                 <div class="about-section active">
+                  <div class="all-main ">
                         <header>
                                 <h2 class="h2 artical-title">About me</h2>
                         </header>
@@ -128,32 +131,43 @@
                       </section>
                 </div>
                 
+                <!-- ------------------------
+                service section
+                ----------------------- -->
                 <section class="services">
                                 <p id="header-1">What i'm Doing </p>
                         <div class="service">
                                 <div class="service-main">
+                                    <div class="img">
                                         <img src="icons/icon-design.svg" alt="">
+                                    </div>  
                                         <div class="service-inner">
                                             <p id="service-title">Web Design</p>
                                             <p id="discription">The most modern and high-quality design mode at professional level</p>
                                         </div>
                                 </div>
                                 <div class="service-main">
-                                    <img src="icons/icon-app.svg" alt="">
+                                  <div class="img">
+                                    <img src="icons/icon-design.svg" alt="">
+                                </div>  
                                     <div class="service-inner">
                                         <p id="service-title">Mobile Apps</p>
                                         <p id="discription">Professional development of applications for iOS and Android.</p>
                                     </div>
                             </div>
                             <div class="service-main">
-                                <img src="icons/icon-photo.svg" alt="">
+                              <div class="img">
+                                <img src="icons/icon-design.svg" alt="">
+                            </div>  
                                 <div class="service-inner">
                                     <p id="service-title">Photography</p>
                                     <p id="discription">High-quality development of sites at the professional level</p>
                                 </div>
                         </div>
                         <div class="service-main">
-                            <img src="icons/icon-dev.svg" alt="">
+                          <div class="img">
+                            <img src="icons/icon-design.svg" alt="">
+                        </div>  
                             <div class="service-inner">
                                 <p id="service-title">Web Development</p>
                                 <p id="discription">The most modern and high-quality design mode at professional level</p>
@@ -161,27 +175,501 @@
                     </div>
              </div>   
      </section>
+     
+     <section class="testimonials">
 
-     <!-- <section class="testimonials">
-        <p id="tes">Testimonials</p>
-        <div class="testimonal-main">
-                <div class="testiomonal-inner">
-                    <div>
-                         <img src="Avatar/avatar-1.png" alt="">
-                        </div>   
-                        <div>
-                                <p id="name">Faizan</p>
-                            </div>       
-                </div>
-               <div class="disc">
-                      <p id="disc">    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a lot of experience and is very concerned about the needs of client.  </p>
-                    </div>
+        <h3 class="h3 testimonials-title">Testimonials</h3>
+
+        <ul class="testimonials-list has-scrollbar">
+
+          <li class="testimonials-item">
+            <div class="content-card" data-testimonials-item>
+
+              <figure class="testimonials-avatar-box">
+                <img src="Avatar/avatar-4.png" alt="Daniel lewis" width="60" data-testimonials-avatar>
+              </figure>
+
+              <h4 class="h4 testimonials-item-title" data-testimonials-title>Faizan</h4>
+
+              <div class="testimonials-text" data-testimonials-text>
+                <p>
+                  Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                  lot of experience
+               
+                </p>
+              </div>
+
+            </div>
+          </li>
+
+          <li class="testimonials-item">
+            <div class="content-card" data-testimonials-item>
+
+              <figure class="testimonials-avatar-box">
+                <img src="Avatar/avatar-1.png" alt="Jessica miller" width="60" data-testimonials-avatar>
+              </figure>
+
+              <h4 class="h4 testimonials-item-title" data-testimonials-title>Fardin</h4>
+
+              <div class="testimonials-text" data-testimonials-text>
+                <p>
+                  Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                  lot of experience
+                   
+               </p>
+              </div>
+
+            </div>
+          </li>
+
+          <li class="testimonials-item">
+            <div class="content-card" data-testimonials-item>
+
+              <figure class="testimonials-avatar-box">
+                <img src="Avatar/avatar-3.png" alt="Emily evans" width="60" data-testimonials-avatar>
+              </figure>
+
+              <h4 class="h4 testimonials-item-title" data-testimonials-title>Hasnain</h4>
+
+              <div class="testimonials-text" data-testimonials-text>
+                <p>
+                  Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                  lot of experience
+                 
+                </p>
+              </div>
+
+            </div>
+          </li>
+
+          <li class="testimonials-item">
+            <div class="content-card" data-testimonials-item>
+
+              <figure class="testimonials-avatar-box">
+                <img src="Avatar/avatar-4.png" alt="Henry william" width="60" data-testimonials-avatar>
+              </figure>
+
+              <h4 class="h4 testimonials-item-title" data-testimonials-title>Farhan</h4>
+
+              <div class="testimonials-text" data-testimonials-text>
+                <p>
+                  Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                  lot of experience
+                 
+                </p>
+              </div>
+
+            </div>
+          </li>
+
+        </ul>
+</section>
+</div>
+</div>
+
+
+
+<!-- resume --> 
+
+<article class="resume visibility" data-page="resume">
+
+  <header>
+    <h2 class="h2 article-title">Resume</h2>
+  </header>
+
+  <section class="timeline">
+
+    <div class="title-wrapper">
+      <div class="icon-box">
+        <ion-icon name="book-outline"></ion-icon>
+      </div>
+
+      <h3 class="h3">Education</h3>
+    </div>
+
+    <ol class="timeline-list">
+
+      <li class="timeline-item">
+
+        <h4 class="h4 timeline-item-title">University school of the arts</h4>
+
+        <span>2007 — 2008</span>
+
+        <p class="timeline-text">
+          Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et
+          quas molestias
+          exceptur.
+        </p>
+
+      </li>
+
+      <li class="timeline-item">
+
+        <h4 class="h4 timeline-item-title">New york academy of art</h4>
+
+        <span>2006 — 2007</span>
+
+        <p class="timeline-text">
+          Ratione voluptatem sequi nesciunt, facere quisquams facere menda ossimus, omnis voluptas assumenda est
+          omnis..
+        </p>
+
+      </li>
+
+      <li class="timeline-item">
+
+        <h4 class="h4 timeline-item-title">High school of art and design</h4>
+
+        <span>2002 — 2004</span>
+
+        <p class="timeline-text">
+          Duis aute irure dolor in reprehenderit in voluptate, quila voluptas mag odit aut fugit, sed consequuntur
+          magni dolores
+          eos.
+        </p>
+
+      </li>
+
+    </ol>
+
+  </section>
+
+  <section class="timeline">
+
+    <div class="title-wrapper">
+      <div class="icon-box">
+        <ion-icon name="book-outline"></ion-icon>
+      </div>
+
+      <h3 class="h3">Experience</h3>
+    </div>
+
+    <ol class="timeline-list">
+
+      <li class="timeline-item">
+
+        <h4 class="h4 timeline-item-title">Creative director</h4>
+
+        <span>2015 — Present</span>
+
+        <p class="timeline-text">
+          Nemo enim ipsam voluptatem blanditiis praesentium voluptum delenit atque corrupti, quos dolores et qvuas
+          molestias
+          exceptur.
+        </p>
+
+      </li>
+
+      <li class="timeline-item">
+
+        <h4 class="h4 timeline-item-title">Art director</h4>
+
+        <span>2013 — 2015</span>
+
+        <p class="timeline-text">
+          Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et
+          quas molestias
+          exceptur.
+        </p>
+
+      </li>
+
+      <li class="timeline-item">
+
+        <h4 class="h4 timeline-item-title">Web designer</h4>
+
+        <span>2010 — 2013</span>
+
+        <p class="timeline-text">
+          Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et
+          quas molestias
+          exceptur.
+        </p>
+
+      </li>
+
+    </ol>
+
+  </section>
+
+  <section class="skill">
+
+    <h3 class="h3 skills-title">My skills</h3>
+
+    <ul class="skills-list content-card">
+
+      <li class="skills-item">
+
+        <div class="title-wrapper">
+          <h5 class="h5">Web design</h5>
+          <data value="80">80%</data>
         </div>
-     </section> -->
- </article>    
-</div>    
-</main>
+
+        <div class="skill-progress-bg">
+          <div class="skill-progress-fill" style="width: 80%;"></div>
+        </div>
+
+      </li>
+
+      <li class="skills-item">
+
+        <div class="title-wrapper">
+          <h5 class="h5">Graphic design</h5>
+          <data value="70">70%</data>
+        </div>
+
+        <div class="skill-progress-bg">
+          <div class="skill-progress-fill" style="width: 70%;"></div>
+        </div>
+
+      </li>
+
+      <li class="skills-item">
+
+        <div class="title-wrapper">
+          <h5 class="h5">Branding</h5>
+          <data value="90">90%</data>
+        </div>
+
+        <div class="skill-progress-bg">
+          <div class="skill-progress-fill" style="width: 90%;"></div>
+        </div>
+
+      </li>
+
+      <li class="skills-item">
+
+        <div class="title-wrapper">
+          <h5 class="h5">WordPress</h5>
+          <data value="50">50%</data>
+        </div>
+
+        <div class="skill-progress-bg">
+          <div class="skill-progress-fill" style="width: 50%;"></div>
+        </div>
+
+      </li>
+
+    </ul>
+  </section>
+</article>
+
+<!-- ------------------------
+portfolio
+----------------------- -->
+
+<article class="portfolio visibility"  data-page="portfolio">
+      <header>
+              <h2 class="h2 artical-title">
+                    Portfolio
+              </h2>
+      </header>
+      <section>
+                <div class="portfolio-box">
+                      <div class="portfolio-main">
+                        <div class="image">
+                              <img src="projects/project-1.jpg" alt="">
+                            </div> 
+                            <div class="info">
+                              <p id="title">
+                                    Finance
+                              </p>
+                              <p id="disc">
+                                    Web Development
+                              </p>
+                      </div>
+                    </div>
+                      <div class="portfolio-main">
+                        <div class="image">
+                              <img src="projects/project-2.png" alt="">
+                            </div> 
+                            <div class="info">
+                              <p id="title">
+                                    Orizon
+                              </p>
+                              <p id="disc">
+                                    Web Development
+                              </p>
+                            </div>  
+                      </div>
+
+                      <div class="portfolio-main">
+                        <div class="image">
+                              <img src="projects/project-3.jpg" alt="">
+                            </div> 
+                            <div class="info">
+                              <p id="title">
+                                    Fundo
+                              </p>
+                              <p id="disc">
+                                    Web Design
+                              </p>
+                            </div>  
+                      </div>
+
+                      <div class="portfolio-main">
+                        <div class="image">
+                              <img src="projects/project-4.png" alt="">
+                            </div> 
+                            <div class="info">
+                              <p id="title">
+                                    Brawlhalla
+                              </p>
+                              <p id="disc">
+                                    Application 
+                              </p>
+                            </div>  
+                      </div>
+
+                      <div class="portfolio-main">
+                        <div class="image">
+                              <img src="projects/project-5.png" alt="">
+                            </div> 
+                            <div class="info">
+                              <p id="title">
+                                    DSM.
+                              </p>
+                              <p id="disc">
+                                    Web Design
+                              </p>
+                            </div>  
+                      </div>
+
+                      <div class="portfolio-main">
+                        <div class="image">
+                              <img src="projects/project-6.png" alt="">
+                            </div> 
+                            <div class="info">
+                              <p id="title">
+                                    Metaspark
+                              </p>
+                              <p id="disc">
+                                    Web Design
+                              </p>
+                            </div>  
+                      </div>
+                </div>
+                
+      </section>
+
+</article>
+
+<article class="contact hide">
+        <header>
+                  <h2 class="h2 artical-title">
+                        contact
+                  </h2>
+        </header>
+        <section class="mapbox">
+            <figure>
+                    <iframe
+                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14576.159452382624!2d72.39187989999998!3d24.029659399999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395cf26aafc0e7c9%3A0x970ebc89fdac2103!2sChhapi%2C%20Gujarat%20385210!5e0!3m2!1sen!2sin!4v1717578130599!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">  
+                   ></iframe>
+            </figure>
+        </section>
+        
+        <section class="contact-form">
+                <div class="form">
+                    <div class="name">
+                          <input type="text" placeholder="Full Name" id="fullname">
+                          <input type="email" placeholder="Email address" class="email">
+                    </div>
+                    <div class="textarea">
+                            <textarea name="" id="textarea">
+                               
+                            </textarea>
+                    </div>
+                    <div class="button">
+                         <button onclick="showPopup();" class="submit">Send Message</button>
+                    </div>
+                  </div>
+        </section>
+</article>
+   </article>     
+
+   <!-- -----------------------
+   poo - up
+   ------------------------->
+   <div class="container">
+    <div class="pop-up-img">
+          <img src="navbar-popup/correct.png" alt="">
+        </div>    
+          <div class="pop-up">
+                <p>Your information has been successfully submitted .</p>
+                <p id="thanks">Thank You .</p>
+          </div>
+          
+        
+   </div>
+ 
+   <!-- -----------------------
+   navbar
+   ----------------------- -->
+   <div class="nav">
+    <div class="box">
+            <div class="box-img">
+              <i class="fa-regular fa-user"></i>
+            </div>
+            <div class="box-name">
+                  <p>About</p>
+            </div>
+    </div>
+
+    <div class="box">
+      <div class="box-img">
+        <i class="fa-regular fa-address-card"></i> 
+      </div>
+      <div class="box-name">
+            <p>Resume</p>
+      </div>
+</div>
+
+<div class="box">
+<div class="box-img">
+  <i class="fa-regular fa-address-book"></i>
+</div>
+<div class="box-name">
+      <p>portfolio</p>
+</div>
+</div>
+<div class="box">
+<div class="box-img">
+<i class="fa-solid fa-blog"></i>
+</div>
+<div class="box-name">
+<p>Blog</p>
+</div>
+</div>
+
+<div class="box">
+<div class="box-img">
+<i class="fa-solid fa-list-check"></i>
+</div>
+<div class="box-name">
+<p>Contact</p>
+</div>
+</div>
+
+</div>
+
+<div class="navbar">
+     <ul class="box">
+            <li onclick="showdet('about');">about</li>
+            <li onclick="showdet('resume');">Resume</li>
+            <li onclick="showdet('portfolio');">portfolio</li>
+            <!-- <li onclick="showdet('blog')">Blog</li> -->
+            <li onclick="showdet('contact')">Contact</li>
+     </ul>
+</div>
+    
+
+
+
+
+
+
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>  
+    <script src="script.js"></script>
 </body>
 </html>
